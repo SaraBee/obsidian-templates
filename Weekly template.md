@@ -1,3 +1,6 @@
+# Weekly Goals
+
+
 This week I...
 
 # Learned
@@ -5,3 +8,5 @@ This week I...
 # Accomplished
 
 # Met
+
+<% await tp.file.rename("Week " + tp.date.now("WW, YYYY")) %>
