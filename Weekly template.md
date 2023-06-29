@@ -1,6 +1,8 @@
 # Weekly Goals
 
 
+^wg{{date:WW-YYYY}}
+
 This week I...
 
 # Learned
