@@ -1,5 +1,5 @@
 # Overview
-<% "## [[Week" + tp.date|Weekly Goals]]
+<% "## Weekly Goals ([[Week" + tp.date.now("WW, YYYY") + "|]])" %>
 <% "![[Goals#^wg" + tp.date.now("WW-YYYY") + "]]" %>
 
 ## Reading
