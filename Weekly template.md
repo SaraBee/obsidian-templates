@@ -1,7 +1,5 @@
 # Weekly Goals
-
-
-^wg{{date:WW-YYYY}}
+<% "![[Goals#^wg" + tp.date.now("WW-YYYY") + "]]" %>
 
 This week I...
 
