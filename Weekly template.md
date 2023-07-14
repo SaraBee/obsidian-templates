@@ -1,12 +1,14 @@
 # Weekly Goals
 <% "![[Goals#^wg" + tp.date.now("WW-YYYY") + "]]" %>
 
-This week I...
+# This week I...
 
-# Learned
+## Learned
 
-# Accomplished
+## Accomplished
 
-# Met
+## Met
+
+## Felt
 
 <% await tp.file.rename("Week " + tp.date.now("WW, YYYY")) %>
