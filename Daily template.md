@@ -1,4 +1,4 @@
-# Overview
+# <% tp.user.moon_phase() %> Overview
 <% "## Weekly Goals ([[Week " + tp.date.now("WW, YYYY") + "]])" %>
 <% "![[Goals#^wg" + tp.date.now("WW-YYYY") + "]]" %>
 
