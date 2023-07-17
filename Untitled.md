@@ -1,0 +1,1 @@
+<% tp.obsidian.plugin.app.plugins.plugins[''] %>
