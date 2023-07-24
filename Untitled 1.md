@@ -1,5 +1,4 @@
 Today's number
-<% tp.date.updateLocale("en",{week:{dow:1}}); tp.date.now("e") %>
 
 Today with mod
 <% tp.date.now("e") % 5 %>
@@ -9,3 +8,6 @@ Friday with Mod
 
 Saturday with Mod
 <% tp.date.weekday("e", 6) % 5 %>
+
+Saturday with Business
+<% tp.user.workday_util() %>
