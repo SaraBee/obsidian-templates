@@ -3,7 +3,7 @@
 let target_path = "/Target.md"
 let target_cache = await this.app.metadataCache.getCache(target_path)
 
-console.log(target_cache.headings)
+console.log(this.app.metadataCache.resolveSubpath(target_cache, "#Here"))
 //move cursor to that line
 //insert tempate after cursor
 %>
