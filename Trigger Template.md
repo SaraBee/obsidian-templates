@@ -3,7 +3,8 @@
 let target_path = "/Target.md"
 let target_tfile = tp.file.find_tfile(target_path)
 
-target_contents_array = await this.app.vault.read(target_tfile)
+let target_contents = await this.app.vault.read(target_tfile)
+let target_contents_array = target_contents.split("\n")
 
 //this.app.metadataCache.getFirstLinkpathDest(target, this.app.workspace.lastActiveFile.path)
 
@@ -16,9 +17,13 @@ for (const heading of target_cache.headings) {
 }
 let template_tfile = tp.file.find_tfile("/Templates/InsertTestTemplate.md")
 let template_content = await tp.file.include(template_tfile)
-//move cursor to that line
-//insert tempate after cursor
 
-console.log(target_contents_array)
+target_contents_array.splice(insert_pos, 0, template_content)
+
+let new_target_contents = target_contents_array.join("\n")
+
+await this.app.vault.adapter.write(target_path, new_target_contents)
+
+console.log("all done!")
 %>
 
