@@ -20,9 +20,3 @@
 
 
 # Thoughts
-
-<%*
-	let weekRoot = "/Weekly Notes"
-	let weeklyFolder = weekRoot + "/Week of "+tp.date.weekday("YYYY-MM-DD", 1)
-	await tp.file.move(weeklyFolder + "/" + tp.file.title)
-%>
