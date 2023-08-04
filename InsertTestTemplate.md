@@ -13,9 +13,8 @@ for (const heading of target_cache.headings) {
 	}
 }
 let target_contents = tp.file.content.split("\n")
-let template_content = tp.file.include(tp.file.find_tfile("/Templates/InsertTest Template"))
-tp.file.content.replace()
-console.log(insert_pos)
+let template_content = tp.file.include(tp.file.find_tfile("/Templates/InsertTestTemplate"))
+console.log(template_content)
 //move cursor to that line
 //insert tempate after cursor
 %>
