@@ -1,4 +1,4 @@
-## {{date}}
+## <% tp.date.now("MMMM D, YYYY") %>
 
 
-^td{{date:DDMMYY}}
+<% "^td" + tp.date.now("DDMMYY") %>

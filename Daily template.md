@@ -20,3 +20,8 @@
 
 
 # Thoughts
+
+<% await tp.user.insert_subtemplate(tp, this.app, "/Bee/Reading/Library.md", "Daily Reading", "/Templates/Daily Reading.md") %>
+
+<% await tp.user.insert_subtemplate(tp, this.app, "/Bee/To Do.md", "Daily To-Do", "/Templates/Daily To-Do.md") %>
+
