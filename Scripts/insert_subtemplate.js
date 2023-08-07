@@ -26,6 +26,7 @@ async function insert_subtemplate(tp, app, target_path, insert_heading, template
 
     // overwrite target file with the updated content
 	await app.vault.adapter.write(target_path, new_target_contents)
+    return ""
 }
 
 module.exports = insert_subtemplate;
