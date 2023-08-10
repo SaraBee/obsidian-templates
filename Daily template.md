@@ -22,6 +22,6 @@
 # Thoughts
 
 <% await tp.user.insert_subtemplate(tp, this.app, "/Bee/Reading/Library.md", "Daily Reading", "/Templates/Daily Reading.md") %>
-
 <% await tp.user.insert_subtemplate(tp, this.app, "/Bee/To Do.md", "Daily To-Do", "/Templates/Daily To-Do.md") %>
-
+<%* if (!(await tp.file.exists("/Weekly Notes/Week " + tp.date.now.(WW, YYYY)))) { 
+await tp.file.create_new(tp.file.find_tfile("/Templates/Weekly template"), "Week.md", false, (await app.vault.getAbstractFileByPath("Weekly Notes"))) } %>
