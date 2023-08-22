@@ -13,4 +13,5 @@
 ## Felt
 
 <% await tp.file.rename("Week " + tp.date.now("WW, YYYY")) %>
+<% await tp.file.move("/Weekly Notes") %>
 <% await tp.user.insert_subtemplate(tp, this.app, "/Bee/Goals.md", "Weekly Goals",  "/Templates/Weekly Goals template.md") %>
